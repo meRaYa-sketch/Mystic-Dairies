@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mystic Diaries</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="blood-drips">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div>
+<h1>MYSTIC DIARIES</h1>
+<p>Every thought leaves a trace.</p>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#diaries">Diaries</a>
+<a href="#about">About</a>
+<a href="#visitors">Visitors</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<div class="moon"></div>
+
+<div class="hero-content">
+<p class="small-title">WELCOME TO MY WORLD</p>
+<h2>Some stories are meant to stay.</h2>
+<p>A personal collection of thoughts, ideas, discoveries and little moments worth remembering.</p>
+<a href="#diaries" class="button">ENTER THE DIARIES</a>
+</div>
+</section>
+
+<section id="diaries" class="diaries">
+<p class="section-title">THE ARCHIVES</p>
+<h2>My Diaries</h2>
+
+<div class="diary-container">
+
+<article class="diary-card">
+<span>01</span>
+<h3>Chemistry Archives</h3>
+<p>Notes, concepts, experiments and everything I discover while studying chemistry.</p>
+<button onclick="openEntry('chemistry')">READ ENTRY →</button>
+</article>
+
+<article class="diary-card">
+<span>02</span>
+<h3>The Archives</h3>
+<p>A collection of things I discover, create, learn and want to remember.</p>
+<button onclick="openEntry('archives')">READ ENTRY →</button>
+</article>
+
+<article class="diary-card">
+<span>03</span>
+<h3>Midnight Notes</h3>
+<p>Random thoughts, observations and moments that deserve their own little page.</p>
+<button onclick="openEntry('midnight')">READ ENTRY →</button>
+</article>
+
+</div>
+</section>
+
+<section id="about" class="about">
+<p class="section-title">THE STORY</p>
+<h2>About Mystic Diaries</h2>
+<p>
+Mystic Diaries is my personal digital diary — a place where I can
+collect things I learn, things I create and thoughts I want to remember.
+</p>
+<p class="author">RaYa.</p>
+</section>
+
+<section id="visitors" class="visitors">
+<p class="section-title">THE VISITOR ARCHIVE</p>
+<h2>Visitors</h2>
+<p class="visitor-text">The visitor archive will record visits once the website is connected to its online database.</p>
+
+<div class="visitor-box">
+<h3 id="visitCount">0</h3>
+<p>Total Visits</p>
+</div>
+</section>
+
+<div id="entryWindow" class="entry-window">
+<div class="entry-content">
+<button class="close-entry" onclick="closeEntry()">×</button>
+<p class="section-title">FROM THE ARCHIVES</p>
+<h2 id="entryTitle"></h2>
+<p id="entryText"></p>
+</div>
+</div>
+
+<footer>
+<p>© 2026 Mystic Diaries</p>
+<p>Written in the shadows. ✦</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
